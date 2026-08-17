@@ -205,10 +205,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &bt BT_SEL 0          &bt BT_SEL 1              &bt BT_SEL 2             &bt BT_SEL 3          &kp C_BRIGHTNESS_DEC   &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT       &trans
-        &trans  &trans                &trans                    &trans                   &trans                &kp C_BRIGHTNESS_DEC   &kp C_VOL_DN  &kp C_MUTE        &kp C_VOLUME_UP  &trans
-&trans  &trans  &hold_bt_3s BT_CLR 0  &hold_bt_3s BT_CLR_ALL 0  &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_BRIGHTNESS_AUTO  &trans        &trans            &trans           &trans  &trans
-                                      &trans                    &trans                   &trans                &trans                 &trans        &trans
+        &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2             &bt BT_SEL 3          &kp C_BRIGHTNESS_DEC   &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT       &trans
+        &trans  &trans        &trans          &trans                   &trans                &kp C_BRIGHTNESS_DEC   &kp C_VOL_DN  &kp C_MUTE        &kp C_VOLUME_UP  &trans
+&trans  &trans  &bt BT_CLR    &bt BT_CLR_ALL  &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_BRIGHTNESS_AUTO  &trans        &trans            &trans           &trans  &trans
+                              &trans          &trans                   &trans                &trans                 &trans        &trans
             >;
         };
 
