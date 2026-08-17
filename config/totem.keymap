@@ -43,6 +43,21 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
         };
+
+        combo_hyper {
+            bindings = <&kp LA(LC(LS(LG(LEFT_GUI))))>;
+            key-positions = <21 10>;
+        };
+
+        combo_meh {
+            bindings = <&kp LA(LC(LEFT_SHIFT))>;
+            key-positions = <30 19>;
+        };
+
+        combo_adjust {
+            bindings = <&mo 3>;
+            key-positions = <35 34>;
+        };
     };
 
     macros {
@@ -84,10 +99,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q  &kp W  &kp E             &kp R      &kp T        &kp Y    &kp U      &kp I      &kp O    &kp P
-            &kp A  &kp S  &kp D             &kp F      &kp G        &kp H    &kp J      &kp K      &kp L    &kp SEMI
-&kp ESCAPE  &kp Z  &kp X  &kp C             &kp V      &kp B        &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSPACE
-                          &kp LEFT_COMMAND  &lt 1 TAB  &kp SPACE    &kp RET  &lt 2 ESC  &kp BSPC
+            &kp Q  &kp W  &kp E             &kp R           &kp T          &kp Y        &kp U          &kp I      &kp O    &kp P
+            &kp A  &kp S  &kp D             &kp F           &kp G          &kp H        &kp J          &kp K      &kp L    &kp SEMI
+&kp ESCAPE  &kp Z  &kp X  &kp C             &kp V           &kp B          &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSPACE
+                          &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 1 SPACE    &lt 2 ENTER  &kp RIGHT_ALT  &kp RCTRL
             >;
         };
 
@@ -110,16 +125,16 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                               &trans    &trans     &trans      &mo 3     &kp KP_N0  &trans
+        &kp ESC    &trans     &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
+        &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
+                              &trans    &trans     &trans      &mo 3     &kp KP_N0  &trans
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        sim_layer {
+        symbol_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "SYM";
@@ -136,10 +151,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS        &kp RA(U)   &kp SQT     &kp DQT
-        &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
-&trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
-                                  &trans     &gif      &mo 3        &trans        &kp C_PP        &trans
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7          &kp NUMBER_8  &kp N9      &kp N0
+        &kp RA(A)     &trans        &kp RA(S)     &trans        &trans    &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)    &kp RA(N4)  &kp RA(O)
+&trans  &kp RA(F18)   &kp RA(F19)   &trans        &trans        &trans    &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV    &kp C_NEXT  &kp BSLH   &trans
+                                    &trans        &gif          &mo 3     &trans        &kp C_PP        &trans
             >;
         };
 
@@ -173,6 +188,15 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         layer_6 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
