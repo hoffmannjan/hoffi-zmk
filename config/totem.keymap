@@ -86,6 +86,24 @@
             #binding-cells = <2>;
             tapping-term-ms = <3000>;
         };
+
+        hold_bt_clear_3s: hold_bt_clear_3s {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_BT_CLEAR_3S";
+            bindings = <&bt_clear>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <3000>;
+        };
+
+        hold_bt_clear_all_5s: hold_bt_clear_all_5s {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_BT_CLEAR_ALL_5S";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <5000>;
+        };
     };
 
     macros {
@@ -204,10 +222,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2             &bt BT_SEL 3          &kp C_BRIGHTNESS_INC   &kp C_NEXT  &kp C_VOLUME_UP    &trans  &trans
-        &trans  &trans        &trans          &trans                   &trans                &kp C_BRIGHTNESS_AUTO  &kp C_PP    &kp C_MUTE         &trans  &trans
-&trans  &trans  &bt BT_CLR    &bt BT_CLR_ALL  &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_BRI_DEC          &kp C_PREV  &kp C_VOLUME_DOWN  &trans  &trans  &trans
-                              &trans          &trans                   &trans                &trans                 &trans      &trans
+        &trans  &bt BT_SEL 0           &bt BT_SEL 1               &bt BT_SEL 2             &bt BT_SEL 3          &kp C_BRIGHTNESS_INC   &kp C_NEXT  &kp C_VOLUME_UP    &trans  &trans
+        &trans  &trans                 &trans                     &trans                   &trans                &kp C_BRIGHTNESS_AUTO  &kp C_PP    &kp C_MUTE         &trans  &trans
+&trans  &trans  &hold_bt_clear_3s 0 0  &hold_bt_clear_all_5s 0 0  &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_BRI_DEC          &kp C_PREV  &kp C_VOLUME_DOWN  &trans  &trans  &trans
+                                       &trans                     &trans                   &trans                &trans                 &trans      &trans
             >;
         };
 
