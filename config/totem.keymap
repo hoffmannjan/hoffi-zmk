@@ -189,10 +189,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp NUMBER_8  &kp N9  &kp N0
-        &trans        &trans        &trans        &trans        &trans    &trans        &trans  &trans        &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans    &trans        &trans  &trans        &trans  &kp BSLH  &trans
-                                    &trans        &trans        &trans    &mo 3         &trans  &trans
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5                  &kp NUMBER_6           &kp N7             &kp NUMBER_8    &kp N9     &kp N0
+        &trans        &trans        &kp GRAVE     &kp LEFT_BRACKET  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp MINUS       &kp PLUS   &kp SQT
+&trans  &trans        &trans        &trans        &kp LESS_THAN     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp GREATER_THAN   &kp UNDERSCORE  &kp EQUAL  &kp BSLH  &trans
+                                    &trans        &trans            &trans                  &mo 3                  &trans             &trans
             >;
         };
 
