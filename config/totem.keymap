@@ -28,6 +28,11 @@
     tapping-term-ms = <250>;
 };
 
+&lt {
+    flavor = "tap-unless-interrupted";
+    tapping-term-ms = <250>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
