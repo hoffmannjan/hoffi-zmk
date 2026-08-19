@@ -29,8 +29,8 @@
 };
 
 &lt {
-    flavor = "tap-unless-interrupted";
     tapping-term-ms = <250>;
+    retro-tap;
 };
 
 / {
