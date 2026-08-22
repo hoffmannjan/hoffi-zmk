@@ -244,7 +244,7 @@
             bindings = <
         &trans  &bt BT_SEL 0           &bt BT_SEL 1               &bt BT_SEL 2             &bt BT_SEL 3          &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC   &kp C_PREV  &ss_full   &trans
         &trans  &trans                 &trans                     &trans                   &trans                &kp C_MUTE       &kp C_BRIGHTNESS_AUTO  &kp C_PP    &ss_area   &trans
-&trans  &trans  &hold_bt_clear_3s 0 0  &hold_bt_clear_all_5s 0 0  &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_VOL_DN     &kp C_BRI_DEC          &kp C_NEXT  &ss_tools  &trans  &trans
+&trans  &trans  &hold_bt_clear_3s 0 0  &hold_bt_clear_all_5s 0 0  &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC   &kp C_NEXT  &ss_tools  &trans  &trans
                                        &trans                     &trans                   &trans                &trans           &trans                 &trans
             >;
         };
