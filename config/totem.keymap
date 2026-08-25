@@ -109,6 +109,34 @@
             #binding-cells = <2>;
             tapping-term-ms = <5000>;
         };
+
+        hmrl: hmrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR Left";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 17 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 36 37 35>;
+        };
+
+        hmrr: hmrr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR Right";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
     };
 
     macros {
