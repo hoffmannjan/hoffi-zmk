@@ -59,7 +59,7 @@
         };
 
         combo_adjust {
-            bindings = <&mo 4>;
+            bindings = <&mo 0>;
             key-positions = <35 34>;
         };
     };
@@ -222,10 +222,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5                  &kp NUMBER_6           &kp N7             &kp NUMBER_8    &kp N9     &kp N0
-        &trans        &trans        &kp GRAVE     &kp LEFT_BRACKET  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp MINUS       &kp PLUS   &kp SQT
-&trans  &trans        &trans        &trans        &kp LESS_THAN     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp GREATER_THAN   &kp UNDERSCORE  &kp EQUAL  &kp BSLH  &trans
-                                    &trans        &trans            &trans                  &mo 3                  &trans             &trans
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3              &kp NUMBER_4                 &kp N5                  &kp NUMBER_6           &kp N7                         &kp NUMBER_8               &kp N9                  &kp N0
+        &trans        &trans        &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_BRACE          &kp RIGHT_BRACE        &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL MINUS  &hmrr RIGHT_SHIFT PLUS  &kp SQT
+&trans  &trans        &trans        &trans                    &kp LESS_THAN                &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp GREATER_THAN               &kp UNDERSCORE             &kp EQUAL               &kp BSLH  &trans
+                                    &trans                    &trans                       &trans                  &mo 3                  &trans                         &trans
             >;
         };
 
@@ -246,10 +246,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans          &trans        &trans            &trans        &trans           &kp TAB   &kp GRAVE      &kp PAGE_UP   &kp HOME   &trans
-        &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp BACKSPACE    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans          &trans        &trans            &trans        &trans           &trans    &kp PAGE_DOWN  &kp END       &trans     &trans  &trans
-                                      &trans            &trans        &mo 3            &trans    &trans         &trans
+        &trans  &trans  &trans  &kp ENTER  &trans           &kp TAB   &kp GRAVE      &kp PAGE_UP   &kp HOME   &trans
+        &trans  &trans  &trans  &trans     &kp BACKSPACE    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans     &kp DEL          &trans    &kp PAGE_DOWN  &kp END       &trans     &trans  &trans
+                        &trans  &trans     &mo 3            &trans    &trans         &trans
             >;
         };
 
@@ -274,24 +274,6 @@
         &trans  &trans                 &trans                     &trans                   &trans                &kp C_MUTE       &kp C_BRIGHTNESS_MAXIMUM  &kp C_PP    &ss_area   &trans
 &trans  &trans  &hold_bt_clear_3s 0 0  &hold_bt_clear_all_5s 0 0  &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC      &kp C_NEXT  &ss_tools  &trans  &trans
                                        &trans                     &trans                   &trans                &trans           &trans                    &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
