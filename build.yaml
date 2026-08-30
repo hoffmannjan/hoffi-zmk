@@ -1,7 +1,7 @@
 include:
-  - board: xiao_ble//zmk
-    shield: totem_left
-  - board: xiao_ble//zmk
-    shield: totem_right
-  - board: xiao_ble//zmk
+  - board: nice_nano_v2
+    shield: cradio_left
+  - board: nice_nano_v2
+    shield: cradio_right
+  - board: nice_nano_v2
     shield: settings_reset
