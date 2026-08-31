@@ -28,6 +28,8 @@ BASE:
 - `S / L` → Shift
 - `D / K` → Ctrl
 - `F / J` → Cmd
+- `A` → Alt (Right)
+
 
 HMR uses opposite-hand triggering to reduce accidental holds
 during normal typing.
