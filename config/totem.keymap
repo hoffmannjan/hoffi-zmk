@@ -137,6 +137,15 @@
             flavor = "balanced";
             hold-trigger-on-release;
         };
+
+        bspc_del: bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSPC_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -225,7 +234,7 @@
         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3              &kp NUMBER_4                 &kp N5                  &kp NUMBER_6           &kp N7                         &kp NUMBER_8               &kp N9                  &kp N0
         &trans        &trans        &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_BRACE          &kp RIGHT_BRACE        &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL MINUS  &hmrr RIGHT_SHIFT PLUS  &kp SQT
 &trans  &trans        &trans        &trans                    &kp LESS_THAN                &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp GREATER_THAN               &kp UNDERSCORE             &kp EQUAL               &kp BSLH  &trans
-                                    &trans                    &trans                       &trans                  &mo 3                  &kp BACKSPACE                  &trans
+                                    &trans                    &trans                       &trans                  &mo 3                  &bspc_del                      &trans
             >;
         };
 
@@ -246,10 +255,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans  &trans  &kp ENTER  &trans     &kp TAB   &kp GRAVE      &kp PAGE_UP   &kp HOME   &trans
-        &trans  &trans  &trans  &trans     &trans     &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans     &kp DEL    &trans    &kp PAGE_DOWN  &kp END       &trans     &trans  &trans
-                        &trans  &trans     &mo 3      &trans    &trans         &trans
+        &trans  &trans  &trans  &kp ENTER  &trans    &kp TAB   &kp GRAVE      &kp PAGE_UP   &kp HOME   &trans
+        &trans  &trans  &trans  &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans    &kp PAGE_DOWN  &kp END       &trans     &trans  &trans
+                        &trans  &trans     &mo 3     &trans    &trans         &trans
             >;
         };
 
