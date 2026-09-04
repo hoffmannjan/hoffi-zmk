@@ -41,8 +41,9 @@
         };
 
         combo_bkspc {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&bspc_del>;
             key-positions = <9 8>;
+            layers = <0>;
         };
 
         combo_hyper {
@@ -55,9 +56,25 @@
             key-positions = <30 19>;
         };
 
-        combo_adjust {
-            bindings = <&mo 0>;
-            key-positions = <35 34>;
+        combo_cycle_win {
+            bindings = <&cmd_grave>;
+            key-positions = <13 16>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_copy {
+            bindings = <&cp_copy>;
+            key-positions = <23 22>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+
+        combo_paste {
+            bindings = <&cp_paste>;
+            key-positions = <24 23>;
+            layers = <0>;
+            timeout-ms = <50>;
         };
     };
 
@@ -179,6 +196,27 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LG(N5))>;
             label = "SS_TOOLS";
+        };
+
+        cmd_grave: cmd_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(GRAVE)>;
+            label = "CMD_GRAVE";
+        };
+
+        cp_copy: cp_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>;
+            label = "CP_COPY";
+        };
+
+        cp_paste: cp_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V)>;
+            label = "CP_PASTE";
         };
     };
 
