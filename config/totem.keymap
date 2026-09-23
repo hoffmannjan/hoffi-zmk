@@ -36,45 +36,43 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <11 12 13>;
             bindings = <&kp ESC>;
         };
 
         combo_bkspc {
             bindings = <&bspc_del>;
             key-positions = <9 8>;
-            layers = <0>;
-        };
-
-        combo_hyper {
-            bindings = <&kp LA(LC(LS(LG(LEFT_GUI))))>;
-            key-positions = <21 10>;
-        };
-
-        combo_meh {
-            bindings = <&kp LA(LC(LEFT_SHIFT))>;
-            key-positions = <30 19>;
         };
 
         combo_cycle_win {
             bindings = <&cmd_grave>;
             key-positions = <13 16>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
-        combo_copy {
-            bindings = <&cp_copy>;
-            key-positions = <23 22>;
-            layers = <0>;
-            timeout-ms = <50>;
+        combo_hyper_l {
+            bindings = <&kp LA(LC(LS(LG(LEFT_GUI))))>;
+            key-positions = <1 3>;
+            slow-release;
         };
 
-        combo_paste {
-            bindings = <&cp_paste>;
-            key-positions = <24 23>;
-            layers = <0>;
-            timeout-ms = <50>;
+        combo_hyper_r {
+            bindings = <&kp LA(LC(LS(LG(LEFT_GUI))))>;
+            key-positions = <6 8>;
+            slow-release;
+        };
+
+        combo_meh_l {
+            bindings = <&kp LA(LC(LEFT_SHIFT))>;
+            key-positions = <1 2 3>;
+            slow-release;
+        };
+
+        combo_meh_r {
+            bindings = <&kp LA(LC(LEFT_SHIFT))>;
+            key-positions = <6 7 8>;
+            slow-release;
         };
     };
 
