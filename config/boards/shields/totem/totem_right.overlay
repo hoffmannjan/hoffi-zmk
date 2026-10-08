@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2022 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include "totem.dtsi"
 
 &default_transform {
@@ -18,4 +12,27 @@
         , <&xiao_d 5 GPIO_ACTIVE_HIGH>
         , <&xiao_d 4 GPIO_ACTIVE_HIGH>
         ;
+};
+
+/ {
+    // The outer side key is row 3 / local column 4.
+    // This input is armed only while the controller is in soft off.
+    keys {
+        compatible = "gpio-keys";
+        side_wake_key: side_wake_key {
+            gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+    };
+
+    side_wake_trigger: side_wake_trigger {
+        compatible = "zmk,gpio-key-wakeup-trigger";
+        trigger = <&side_wake_key>;
+        wakeup-source;
+        extra-gpios = <&xiao_d 4 GPIO_ACTIVE_HIGH>;
+    };
+
+    soft_off_wakers {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources = <&side_wake_trigger>;
+    };
 };
