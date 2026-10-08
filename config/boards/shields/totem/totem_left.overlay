@@ -11,24 +11,24 @@
 };
 
 / {
-    // The outer side key is row 3 / local column 0.
-    // This input is armed only while the controller is in soft off.
+    // Physical G key: row 1 / local column 4 (XIAO D1 / D8).
+    // The matrix wake input is armed only during soft off.
     keys {
         compatible = "gpio-keys";
-        side_wake_key: side_wake_key {
-            gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        center_wake_key: center_wake_key {
+            gpios = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         };
     };
 
-    side_wake_trigger: side_wake_trigger {
+    center_wake_trigger: center_wake_trigger {
         compatible = "zmk,gpio-key-wakeup-trigger";
-        trigger = <&side_wake_key>;
+        trigger = <&center_wake_key>;
         wakeup-source;
-        extra-gpios = <&xiao_d 4 GPIO_ACTIVE_HIGH>;
+        extra-gpios = <&xiao_d 8 GPIO_ACTIVE_HIGH>;
     };
 
     soft_off_wakers {
         compatible = "zmk,soft-off-wakeup-sources";
-        wakeup-sources = <&side_wake_trigger>;
+        wakeup-sources = <&center_wake_trigger>;
     };
 };
