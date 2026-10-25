@@ -40,6 +40,12 @@
             bindings = <&kp ESC>;
         };
 
+        combo_r_esc {
+            bindings = <&kp ESC>;
+            key-positions = <16 17 18>;
+            timeout-ms = <50>;
+        };
+
         combo_bkspc {
             bindings = <&bspc_del>;
             key-positions = <9 8>;
@@ -75,11 +81,6 @@
             slow-release;
         };
 
-        combo_r_esc {
-            bindings = <&kp ESC>;
-            key-positions = <16 17 18>;
-            timeout-ms = <50>;
-        };
     };
 
     behaviors {
