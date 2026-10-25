@@ -80,7 +80,6 @@
             key-positions = <6 7 8>;
             slow-release;
         };
-
     };
 
     behaviors {
@@ -287,10 +286,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT  &kp HASH                  &kp DOLLAR                   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp AMPERSAND                  &kp ASTERISK               &kp CARET               &kp PERCENT
-        &trans    &trans  &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_BRACE          &kp RIGHT_BRACE        &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL MINUS  &hmrr RIGHT_SHIFT PLUS  &kp SQT
-&trans  &trans    &trans  &trans                    &kp LESS_THAN                &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp GREATER_THAN               &kp UNDERSCORE             &kp EQUAL               &kp BSLH     &trans
-                          &trans                    &trans                       &trans                  &mo 3                  &bspc_del                      &trans
+        &kp EXCL  &kp AT  &kp HASH                  &kp DOLLAR              &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp AMPERSAND          &kp ASTERISK               &kp CARET               &kp PERCENT
+        &trans    &trans  &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI PERCENT  &kp LEFT_BRACE          &kp RIGHT_BRACE        &hmrr RIGHT_GUI CARET  &hmrr RIGHT_CONTROL MINUS  &hmrr RIGHT_SHIFT PLUS  &kp SQT
+&trans  &trans    &trans  &trans                    &kp LESS_THAN           &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp GREATER_THAN       &kp UNDERSCORE             &kp EQUAL               &kp BSLH     &trans
+                          &trans                    &trans                  &trans                  &mo 3                  &bspc_del              &trans
             >;
         };
 
