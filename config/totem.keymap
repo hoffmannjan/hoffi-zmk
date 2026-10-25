@@ -218,25 +218,11 @@
             label = "CMD_GRAVE";
         };
 
-        cp_copy: cp_copy {
+        logout: logout {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(C)>;
-            label = "CP_COPY";
-        };
-
-        cp_paste: cp_paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(V)>;
-            label = "CP_PASTE";
-        };
-
-        KP_BACKSLASH: KP_BACKSLASH {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "KP_BACKSLASH";
+            bindings = <&kp RG(RC(Q))>;
+            label = "LOGOUT";
         };
     };
 
@@ -311,8 +297,8 @@
 
             bindings = <
         &kp KP_ASTERISK  &kp KP_NUMBER_7               &kp KP_NUMBER_8                 &kp KP_NUMBER_9             &kp KP_NUMBER_0            &kp TAB      &kp GRAVE      &kp PAGE_UP   &kp HOME   &trans
-        &kp KP_DIVIDE    &hmrl LEFT_SHIFT KP_NUMBER_4  &hmrl LEFT_CONTROL KP_NUMBER_5  &hmrl LEFT_GUI KP_NUMBER_6  &hmrl LEFT_ALT KP_EQUAL    &kp LEFT     &kp DOWN       &kp UP_ARROW  &kp RIGHT  &KP_BACKSLASH
-&trans  &kp KP_DOT       &kp KP_NUMBER_1               &kp KP_NUMBER_2                 &kp KP_NUMBER_3             &kp KP_MINUS               &kp KP_PLUS  &kp PAGE_DOWN  &kp END       &trans     &kp PERIOD     &trans
+        &kp KP_DIVIDE    &hmrl LEFT_SHIFT KP_NUMBER_4  &hmrl LEFT_CONTROL KP_NUMBER_5  &hmrl LEFT_GUI KP_NUMBER_6  &hmrl LEFT_ALT KP_EQUAL    &kp LEFT     &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp BACKSLASH
+&trans  &kp KP_DOT       &kp KP_NUMBER_1               &kp KP_NUMBER_2                 &kp KP_NUMBER_3             &kp KP_MINUS               &kp KP_PLUS  &kp PAGE_DOWN  &kp END       &trans     &kp COMMA      &trans
                                                        &trans                          &bspc_del                   &mo 3                      &trans       &trans         &trans
             >;
         };
@@ -334,9 +320,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &bt BT_SEL 0           &bt BT_SEL 1                &bt BT_SEL 2  &bt BT_SEL 3             &bt BT_SEL 4          &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC      &kp C_PREV  &ss_full   &trans
-        &trans                 &trans                      &trans        &trans                   &trans                &kp C_MUTE       &kp C_BRIGHTNESS_MAXIMUM  &kp C_PP    &ss_area   &trans
-&trans  &hold_bt_clear_3s 0 0  &hold_bt_clear_all_10s 0 0  &trans        &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC      &kp C_NEXT  &ss_tools  &trans  &trans
+        &bt BT_SEL 0           &bt BT_SEL 1                &bt BT_SEL 2  &bt BT_SEL 3             &bt BT_SEL 4          &kp C_VOLUME_UP  &kp LC(C_BRIGHTNESS_INC)  &kp C_PREV  &ss_full   &trans
+        &trans                 &trans                      &trans        &trans                   &trans                &kp C_MUTE       &logout                   &kp C_PP    &ss_area   &trans
+&trans  &hold_bt_clear_3s 0 0  &hold_bt_clear_all_10s 0 0  &trans        &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_VOL_DN     &kp LC(C_BRIGHTNESS_DEC)  &kp C_NEXT  &ss_tools  &trans  &trans
                                                            &trans        &trans                   &trans                &trans           &trans                    &trans
             >;
         };
