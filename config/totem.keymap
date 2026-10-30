@@ -274,8 +274,8 @@
             bindings = <
         &kp EXCL  &kp AT  &kp HASH                  &kp DOLLAR                   &kp PERCENT             &kp CARET              &kp AMPERSAND                  &kp ASTERISK              &kp SQT                  &kp DOUBLE_QUOTES
         &trans    &trans  &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL PLUS  &hmrr RIGHT_SHIFT MINUS  &kp COLON
-&trans  &trans    &trans  &trans                    &kp LESS_THAN                &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp GREATER_THAN               &kp UNDERSCORE            &kp EQUAL                &kp BSLH           &trans
-                          &trans                    &trans                       &trans                  &mo 3                  &bspc_del                      &trans
+&trans  &trans    &trans  &kp PIPE                  &kp LESS_THAN                &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp GREATER_THAN               &kp UNDERSCORE            &kp EQUAL                &kp BSLH           &trans
+                          &trans                    &trans                       &trans                  &trans                 &bspc_del                      &trans
             >;
         };
 
@@ -296,10 +296,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp KP_ASTERISK  &kp KP_NUMBER_7               &kp KP_NUMBER_8                 &kp KP_NUMBER_9             &kp KP_NUMBER_0            &trans       &kp GRAVE      &kp PAGE_UP   &kp HOME   &trans
-        &kp KP_DIVIDE    &hmrl LEFT_SHIFT KP_NUMBER_4  &hmrl LEFT_CONTROL KP_NUMBER_5  &hmrl LEFT_GUI KP_NUMBER_6  &hmrl LEFT_ALT KP_EQUAL    &kp LEFT     &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp BACKSLASH
-&trans  &kp KP_DOT       &kp KP_NUMBER_1               &kp KP_NUMBER_2                 &kp KP_NUMBER_3             &kp KP_MINUS               &kp KP_PLUS  &kp PAGE_DOWN  &kp END       &trans     &kp COMMA      &trans
-                                                       &trans                          &bspc_del                   &mo 3                      &trans       &trans         &trans
+        &kp ASTERISK  &kp N7                     &kp N8                 &kp N9                   &kp N0                  &kp GRAVE  &trans     &trans        &kp HOME   &trans
+        &kp SLASH     &hmrl LEFT_SHIFT NUMBER_4  &hmrl LEFT_CONTROL N5  &hmrl LEFT_GUI NUMBER_6  &hmrl LEFT_ALT EQUAL    &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp BACKSLASH
+&trans  &kp DOT       &kp NUMBER_1               &kp NUMBER_2           &kp NUMBER_3             &kp MINUS               &kp PLUS   &trans     &trans        &kp END    &kp COMMA      &trans
+                                                 &trans                 &trans                   &mo 3                   &trans     &bspc_del  &trans
             >;
         };
 
