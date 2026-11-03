@@ -272,10 +272,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT  &kp HASH                  &kp DOLLAR                   &kp PERCENT             &kp CARET              &kp AMPERSAND                  &kp ASTERISK              &kp SQT                  &kp DOUBLE_QUOTES
-        &trans    &trans  &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL PLUS  &hmrr RIGHT_SHIFT MINUS  &kp COLON
-&trans  &trans    &trans  &kp PIPE                  &kp LESS_THAN                &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp GREATER_THAN               &kp UNDERSCORE            &kp EQUAL                &kp BSLH           &trans
-                          &trans                    &mo 3                        &trans                  &trans                 &bspc_del                      &trans
+        &kp EXCL  &kp AT     &kp HASH                  &kp DOLLAR                   &kp PERCENT             &kp CARET              &kp AMPERSAND                  &kp ASTERISK              &kp SQT                  &kp DOUBLE_QUOTES
+        &trans    &kp TILDE  &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL PLUS  &hmrr RIGHT_SHIFT MINUS  &kp COLON
+&trans  &trans    &trans     &kp PIPE                  &kp LESS_THAN                &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp GREATER_THAN               &kp UNDERSCORE            &kp EQUAL                &kp BSLH           &trans
+                             &trans                    &mo 3                        &trans                  &trans                 &bspc_del                      &trans
             >;
         };
 
