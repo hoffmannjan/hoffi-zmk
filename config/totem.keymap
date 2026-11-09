@@ -34,10 +34,18 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
+        combo_esc_l {
+            timeout-ms = <60>;
             key-positions = <11 12 13>;
             bindings = <&kp ESC>;
+            layers = <0>;
+        };
+
+        combo_r_esc {
+            bindings = <&kp ESC>;
+            key-positions = <16 17 18>;
+            timeout-ms = <60>;
+            layers = <0>;
         };
 
         combo_bkspc {
@@ -77,6 +85,16 @@
     };
 
     behaviors {
+        hold_soft_off_3s: hold_soft_off_3s {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_SOFT_OFF_3S";
+            bindings = <&soft_off>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <3000>;
+            flavor = "tap-preferred";
+        };
+
         hold_bootloader_3s: hold_bootloader_3s {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_BOOTLOADER_3S";
@@ -113,13 +131,13 @@
             tapping-term-ms = <3000>;
         };
 
-        hold_bt_clear_all_5s: hold_bt_clear_all_5s {
+        hold_bt_clear_all_10s: hold_bt_clear_all_10s {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_BT_CLEAR_ALL_5S";
+            label = "HOLD_BT_CLEAR_ALL_10S";
             bindings = <&none>, <&none>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <5000>;
+            tapping-term-ms = <10000>;
         };
 
         hmrl: hmrl {
@@ -157,6 +175,16 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hold_logout_1s: hold_logout_1s {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LOGOUT_1S";
+            bindings = <&logout>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <1000>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -203,18 +231,11 @@
             label = "CMD_GRAVE";
         };
 
-        cp_copy: cp_copy {
+        logout: logout {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(C)>;
-            label = "CP_COPY";
-        };
-
-        cp_paste: cp_paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(V)>;
-            label = "CP_PASTE";
+            bindings = <&kp RG(RC(Q))>;
+            label = "LOGOUT";
         };
     };
 
@@ -240,10 +261,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q             &kp W               &kp E             &kp R             &kp T          &kp Y        &kp U              &kp I          &kp O                &kp P
-       &hmrl LEFT_ALT A  &hmrl LEFT_SHIFT S  &hmrl LCTRL D     &hmrl LEFT_GUI F  &kp G          &kp H        &hmrr RIGHT_GUI J  &hmrr RCTRL K  &hmrr RIGHT_SHIFT L  &kp SEMI
-&none  &kp Z             &kp X               &kp C             &kp V             &kp B          &kp N        &kp M              &kp COMMA      &kp DOT              &kp FSLH  &none
-                                             &kp LEFT_COMMAND  &kp TAB           &lt 1 SPACE    &lt 2 ENTER  &kp RIGHT_ALT      &none
+                   &kp Q  &kp W               &kp E          &kp R             &kp T          &kp Y        &kp U              &kp I          &kp O                &kp P
+                   &kp A  &hmrl LEFT_SHIFT S  &hmrl LCTRL D  &hmrl LEFT_GUI F  &kp G          &kp H        &hmrr RIGHT_GUI J  &hmrr RCTRL K  &hmrr RIGHT_SHIFT L  &kp SEMI
+&kp C_VOLUME_DOWN  &kp Z  &kp X               &kp C          &kp V             &kp B          &kp N        &kp M              &kp COMMA      &kp DOT              &kp FSLH  &kp C_VOLUME_UP
+                                              &none          &kp TAB           &lt 1 SPACE    &lt 2 ENTER  &kp RIGHT_ALT      &none
             >;
         };
 
@@ -264,10 +285,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3              &kp NUMBER_4                 &kp N5                  &kp NUMBER_6           &kp N7                         &kp NUMBER_8               &kp N9                  &kp N0
-        &trans        &trans        &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_BRACE          &kp RIGHT_BRACE        &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL MINUS  &hmrr RIGHT_SHIFT PLUS  &kp SQT
-&trans  &trans        &trans        &trans                    &kp LESS_THAN                &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp GREATER_THAN               &kp UNDERSCORE             &kp EQUAL               &kp BSLH  &trans
-                                    &trans                    &trans                       &trans                  &mo 3                  &bspc_del                      &trans
+                          &kp EXCL  &kp AT                  &kp HASH                  &kp DOLLAR                   &kp PERCENT             &kp CARET              &kp AMPERSAND                  &kp ASTERISK               &kp SQT                  &kp DOUBLE_QUOTES
+                          &trans    &hmrl LEFT_SHIFT TILDE  &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL MINUS  &hmrr RIGHT_SHIFT MINUS  &kp COLON
+&kp LC(C_BRIGHTNESS_DEC)  &trans    &trans                  &kp PIPE                  &kp LESS_THAN                &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp GREATER_THAN               &kp UNDERSCORE             &kp EQUAL                &kp BSLH           &kp LC(C_BRIGHTNESS_INC)
+                                                            &trans                    &mo 3                        &trans                  &trans                 &bspc_del                      &trans
             >;
         };
 
@@ -288,10 +309,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans  &trans  &kp ENTER  &trans    &kp TAB   &kp GRAVE      &kp PAGE_UP   &kp HOME   &trans
-        &trans  &trans  &trans  &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &trans    &kp PAGE_DOWN  &kp END       &trans     &trans  &trans
-                        &trans  &trans     &mo 3     &trans    &trans         &trans
+                       &kp ASTERISK  &kp N7                     &kp N8                 &kp N9                   &kp N0                  &kp GRAVE  &trans     &trans        &kp HOME   &trans
+                       &kp SLASH     &hmrl LEFT_SHIFT NUMBER_4  &hmrl LEFT_CONTROL N5  &hmrl LEFT_GUI NUMBER_6  &hmrl LEFT_ALT EQUAL    &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp BACKSLASH
+&hold_soft_off_3s 0 0  &kp DOT       &trans                     &kp NUMBER_2           &kp NUMBER_3             &kp MINUS               &kp PLUS   &trans     &trans        &kp END    &kp COMMA      &hold_logout_1s 0 0
+                                                                &trans                 &trans                   &trans                  &trans     &bspc_del  &trans
             >;
         };
 
@@ -312,10 +333,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &bt BT_SEL 0           &bt BT_SEL 1               &bt BT_SEL 2  &bt BT_SEL 3             &bt BT_SEL 4          &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC      &kp C_PREV  &ss_full   &trans
-        &trans                 &trans                     &trans        &trans                   &trans                &kp C_MUTE       &kp C_BRIGHTNESS_MAXIMUM  &kp C_PP    &ss_area   &trans
-&trans  &hold_bt_clear_3s 0 0  &hold_bt_clear_all_5s 0 0  &trans        &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC      &kp C_NEXT  &ss_tools  &trans  &trans
-                                                          &trans        &trans                   &trans                &trans           &trans                    &trans
+        &bt BT_SEL 0           &bt BT_SEL 1                &bt BT_SEL 2  &bt BT_SEL 3             &bt BT_SEL 4          &kp C_VOLUME_UP  &kp LC(C_BRIGHTNESS_INC)  &kp C_PREV  &ss_full   &trans
+        &trans                 &trans                      &trans        &trans                   &trans                &kp C_MUTE       &logout                   &kp C_PP    &ss_area   &trans
+&trans  &hold_bt_clear_3s 0 0  &hold_bt_clear_all_10s 0 0  &trans        &hold_bootloader_3s 0 0  &hold_reset_3s 0 0    &kp C_VOL_DN     &kp LC(C_BRIGHTNESS_DEC)  &kp C_NEXT  &ss_tools  &trans  &trans
+                                                           &trans        &trans                   &trans                &trans           &trans                    &trans
             >;
         };
     };
