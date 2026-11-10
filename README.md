@@ -3,6 +3,8 @@ My shared ZMK configuration for split keyboards
 
 ## Keymap
 
+[View the TOTEM and Ferris Sweep layouts](docs/layouts.md).
+
 The diagrams are generated from the current bindings. Hold Space for SYM,
 hold Enter for NAV, and hold TAB on SYM for ADJ. Smaller legends show
 what a key does when held. Hover over a key to see its ZMK binding.
@@ -20,12 +22,11 @@ whose product page does not specify the revision of its custom PCB.
 | ADJ | [TOTEM ADJ](docs/keymap/totem-adj.svg) | [Sweep ADJ](docs/keymap/universal-34-keys-adj.svg) |
 
 ## TOTEM and universal-34-keys firmware
-
+    bs
 Edit `config/totem.keymap`, then regenerate the universal-34-keys map and both sets of diagrams:
 
 ```sh
 python3 scripts/generate_universal_34_keys.py
-python3 scripts/generate_universal_34_keys.py --check
 ```
 
 ZMK uses the generated `config/cradio.keymap` for both halves of the universal-34-keys build.
@@ -50,11 +51,12 @@ positions. It rejects combos using removed keys so a replacement chord can
 be chosen deliberately. TOTEM's soft-off behavior requires its shield's
 wake configuration and is omitted from universal-34-keys.
 
-On a branch push, including a save from Keymap Editor, GitHub Actions
-regenerates the Sweep map and diagrams. If the files changed, it commits
-them to the same branch and explicitly starts a build from the updated
-branch. The generator can also be run locally before committing.
+Every branch push, including saves from Keymap Editor and merges to
+`master`, regenerates the Sweep map and layout SVGs and builds both
+halves of both keyboards plus the TOTEM settings-reset target. If the
+generated files changed, CI commits them to the same branch and starts
+the firmware build from the updated branch.
 
-CI checks the generated files and builds both halves of each keyboard
-plus the existing TOTEM settings-reset target. A published GitHub
-release builds its tagged commit and attaches the UF2 files from that run.
+Download the UF2 files from the `firmware` artifact in the completed
+GitHub Actions run. You can also start the workflow manually for a ref
+whose generated files are already up to date.

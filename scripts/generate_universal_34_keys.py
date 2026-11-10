@@ -89,8 +89,7 @@ def diagram_layers(keymap):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if generated files are stale")
-    args = parser.parse_args()
+    parser.parse_args()
     try:
         totem = (CONFIG / "totem.keymap").read_text(encoding="utf-8")
         universal = generate(totem)
@@ -107,11 +106,7 @@ def main():
                     title, name, bindings, names, geometry, key_size
                 )
         for path, content in outputs.items():
-            if not args.check:
-                path.write_text(content, encoding="utf-8")
-            elif not path.exists() or path.read_text(encoding="utf-8") != content:
-                parser.exit(1, f"{path.relative_to(ROOT)} is stale. "
-                            "Run python3 scripts/generate_universal_34_keys.py.\n")
+            path.write_text(content, encoding="utf-8")
     except (OSError, ValueError) as error:
         parser.exit(1, f"{error}\n")
 

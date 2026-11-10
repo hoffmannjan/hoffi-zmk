@@ -2,17 +2,14 @@ name: Build firmware
 
 on:
   push:
-  pull_request:
+    branches: ['**']
   workflow_dispatch:
-  release:
-    types: [published]
 
 permissions:
   contents: read
 
 jobs:
   sync-keymap:
-    if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -24,6 +21,7 @@ jobs:
       - name: Regenerate Sweep map and diagrams
         id: generate
         env:
+          EVENT: ${{ github.event_name }}
           BRANCH: ${{ github.ref_name }}
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -34,6 +32,11 @@ jobs:
             exit 0
           fi
 
+          if [ "$EVENT" != push ]; then
+            echo "::error::Generated files are stale. Regenerate and push before building this ref."
+            exit 1
+          fi
+
           git -c user.name='github-actions[bot]' \
               -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
               commit -m 'Regenerate 34-key keymap and diagrams'
@@ -42,34 +45,7 @@ jobs:
           # Pushes made with GITHUB_TOKEN do not trigger a new push workflow.
           gh workflow run build.yml --ref "$BRANCH"
 
-  check-keymap:
-    needs: sync-keymap
-    if: >-
-      ${{ !cancelled() && (needs.sync-keymap.result == 'skipped' ||
-      (needs.sync-keymap.result == 'success' && needs.sync-keymap.outputs.regenerated == 'false')) }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-      - run: python3 scripts/generate_universal_34_keys.py --check
-
   build:
-    needs: check-keymap
+    needs: sync-keymap
+    if: needs.sync-keymap.outputs.regenerated != 'true'
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-
-  release:
-    if: github.event_name == 'release'
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/download-artifact@v7
-        with:
-          name: firmware
-          path: firmware
-      - name: Attach UF2 files to the release
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-          RELEASE_TAG: ${{ github.event.release.tag_name }}
-        run: gh release upload -- "$RELEASE_TAG" firmware/*.uf2
