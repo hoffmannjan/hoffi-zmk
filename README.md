@@ -7,6 +7,11 @@ The diagrams are generated from the current bindings. Hold Space for SYM,
 hold Enter for NAV, and hold TAB on SYM for ADJ. Smaller legends show
 what a key does when held. Hover over a key to see its ZMK binding.
 
+Switch positions and angles come from the [official TOTEM layout SVG](https://github.com/GEIGEIGEIST/TOTEM/blob/main/docs/images/TOTEM_layout.svg)
+and the [Sweep v2.2 PCB](https://github.com/davidphilipbarr/Sweep/tree/main/Sweep%20v2.2).
+Sweep v2.2 is the geometry reference for the [Boardsource Crab Broom](https://boardsource.xyz/products/crab-broom-choc-ferris-sweep),
+whose product page does not specify the revision of its custom PCB.
+
 | Layer | TOTEM | Ferris Sweep |
 | --- | --- | --- |
 | BASE | [TOTEM BASE](docs/keymap/totem-base.svg) | [Sweep BASE](docs/keymap/universal-34-keys-base.svg) |

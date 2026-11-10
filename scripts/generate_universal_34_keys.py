@@ -5,6 +5,7 @@ import argparse
 from pathlib import Path
 import re
 
+from keymap_geometry import SWEEP_GEOMETRY, TOTEM_GEOMETRY
 from keymap_svg import render
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -94,16 +95,16 @@ def main():
         totem = (CONFIG / "totem.keymap").read_text(encoding="utf-8")
         universal = generate(totem)
         outputs = {CONFIG / "cradio.keymap": universal}
-        for slug, title, keymap, rows in (
-            ("totem", "TOTEM", totem, (5, 5, 6, 3)),
-            ("universal-34-keys", "Ferris Sweep · universal-34-keys", universal, (5, 5, 5, 2)),
+        for slug, title, keymap, geometry, key_size in (
+            ("totem", "TOTEM", totem, TOTEM_GEOMETRY, (86, 81)),
+            ("universal-34-keys", "Ferris Sweep · universal-34-keys", universal, SWEEP_GEOMETRY, (82, 76)),
         ):
             layers = diagram_layers(keymap)
             names = [name for name, _ in layers]
             for name, bindings in layers:
                 layer = "nav" if name == "NAVI" else name.lower()
                 outputs[DIAGRAMS / f"{slug}-{layer}.svg"] = render(
-                    title, name, bindings, names, rows
+                    title, name, bindings, names, geometry, key_size
                 )
         for path, content in outputs.items():
             if not args.check:

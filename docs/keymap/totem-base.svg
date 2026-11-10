@@ -1,44 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 335" width="1300" height="335" role="img" aria-label="TOTEM BASE keymap">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 562" width="1320" height="562" role="img" aria-label="TOTEM BASE keymap">
 <style>text{font-family:system-ui,sans-serif;fill:#10263f;text-anchor:middle}.key{fill:#fff;stroke:#a6b8ce}.muted{fill:#e7edf5;stroke:#c1cede}.sub{font-size:11px;fill:#405d7e}.heading{text-anchor:start;font-weight:700}</style>
 <rect width="100%" height="100%" rx="16" fill="#f3f6fb"/>
 <text class="heading" x="24" y="37" font-size="23">TOTEM · BASE</text>
-<text class="sub" x="1050" y="37">▽  Transparent (fall through)     ·     —  Disabled</text>
-<g><title>&amp;kp Q</title><rect class="key" x="126" y="66" width="94" height="55" rx="8"/><text x="173" y="100" font-size="15">Q</text><text class="sub" x="173" y="109"></text></g>
-<g><title>&amp;kp W</title><rect class="key" x="224" y="66" width="94" height="55" rx="8"/><text x="271" y="100" font-size="15">W</text><text class="sub" x="271" y="109"></text></g>
-<g><title>&amp;kp E</title><rect class="key" x="322" y="66" width="94" height="55" rx="8"/><text x="369" y="100" font-size="15">E</text><text class="sub" x="369" y="109"></text></g>
-<g><title>&amp;kp R</title><rect class="key" x="420" y="66" width="94" height="55" rx="8"/><text x="467" y="100" font-size="15">R</text><text class="sub" x="467" y="109"></text></g>
-<g><title>&amp;kp T</title><rect class="key" x="518" y="66" width="94" height="55" rx="8"/><text x="565" y="100" font-size="15">T</text><text class="sub" x="565" y="109"></text></g>
-<g><title>&amp;kp Y</title><rect class="key" x="686" y="66" width="94" height="55" rx="8"/><text x="733" y="100" font-size="15">Y</text><text class="sub" x="733" y="109"></text></g>
-<g><title>&amp;kp U</title><rect class="key" x="784" y="66" width="94" height="55" rx="8"/><text x="831" y="100" font-size="15">U</text><text class="sub" x="831" y="109"></text></g>
-<g><title>&amp;kp I</title><rect class="key" x="882" y="66" width="94" height="55" rx="8"/><text x="929" y="100" font-size="15">I</text><text class="sub" x="929" y="109"></text></g>
-<g><title>&amp;kp O</title><rect class="key" x="980" y="66" width="94" height="55" rx="8"/><text x="1027" y="100" font-size="15">O</text><text class="sub" x="1027" y="109"></text></g>
-<g><title>&amp;kp P</title><rect class="key" x="1078" y="66" width="94" height="55" rx="8"/><text x="1125" y="100" font-size="15">P</text><text class="sub" x="1125" y="109"></text></g>
-<g><title>&amp;kp A</title><rect class="key" x="126" y="128" width="94" height="55" rx="8"/><text x="173" y="162" font-size="15">A</text><text class="sub" x="173" y="171"></text></g>
-<g><title>&amp;hmrl LEFT_SHIFT S</title><rect class="key" x="224" y="128" width="94" height="55" rx="8"/><text x="271" y="154" font-size="15">S</text><text class="sub" x="271" y="171">Hold: Shift</text></g>
-<g><title>&amp;hmrl LCTRL D</title><rect class="key" x="322" y="128" width="94" height="55" rx="8"/><text x="369" y="154" font-size="15">D</text><text class="sub" x="369" y="171">Hold: Ctrl</text></g>
-<g><title>&amp;hmrl LEFT_GUI F</title><rect class="key" x="420" y="128" width="94" height="55" rx="8"/><text x="467" y="154" font-size="15">F</text><text class="sub" x="467" y="171">Hold: L Gui</text></g>
-<g><title>&amp;kp G</title><rect class="key" x="518" y="128" width="94" height="55" rx="8"/><text x="565" y="162" font-size="15">G</text><text class="sub" x="565" y="171"></text></g>
-<g><title>&amp;kp H</title><rect class="key" x="686" y="128" width="94" height="55" rx="8"/><text x="733" y="162" font-size="15">H</text><text class="sub" x="733" y="171"></text></g>
-<g><title>&amp;hmrr RIGHT_GUI J</title><rect class="key" x="784" y="128" width="94" height="55" rx="8"/><text x="831" y="154" font-size="15">J</text><text class="sub" x="831" y="171">Hold: R Gui</text></g>
-<g><title>&amp;hmrr RCTRL K</title><rect class="key" x="882" y="128" width="94" height="55" rx="8"/><text x="929" y="154" font-size="15">K</text><text class="sub" x="929" y="171">Hold: Ctrl</text></g>
-<g><title>&amp;hmrr RIGHT_SHIFT L</title><rect class="key" x="980" y="128" width="94" height="55" rx="8"/><text x="1027" y="154" font-size="15">L</text><text class="sub" x="1027" y="171">Hold: Shift</text></g>
-<g><title>&amp;kp SEMI</title><rect class="key" x="1078" y="128" width="94" height="55" rx="8"/><text x="1125" y="162" font-size="15">;</text><text class="sub" x="1125" y="171"></text></g>
-<g><title>&amp;kp C_VOLUME_DOWN</title><rect class="key" x="28" y="190" width="94" height="55" rx="8"/><text x="75" y="224" font-size="15">Vol −</text><text class="sub" x="75" y="233"></text></g>
-<g><title>&amp;kp Z</title><rect class="key" x="126" y="190" width="94" height="55" rx="8"/><text x="173" y="224" font-size="15">Z</text><text class="sub" x="173" y="233"></text></g>
-<g><title>&amp;kp X</title><rect class="key" x="224" y="190" width="94" height="55" rx="8"/><text x="271" y="224" font-size="15">X</text><text class="sub" x="271" y="233"></text></g>
-<g><title>&amp;kp C</title><rect class="key" x="322" y="190" width="94" height="55" rx="8"/><text x="369" y="224" font-size="15">C</text><text class="sub" x="369" y="233"></text></g>
-<g><title>&amp;kp V</title><rect class="key" x="420" y="190" width="94" height="55" rx="8"/><text x="467" y="224" font-size="15">V</text><text class="sub" x="467" y="233"></text></g>
-<g><title>&amp;kp B</title><rect class="key" x="518" y="190" width="94" height="55" rx="8"/><text x="565" y="224" font-size="15">B</text><text class="sub" x="565" y="233"></text></g>
-<g><title>&amp;kp N</title><rect class="key" x="686" y="190" width="94" height="55" rx="8"/><text x="733" y="224" font-size="15">N</text><text class="sub" x="733" y="233"></text></g>
-<g><title>&amp;kp M</title><rect class="key" x="784" y="190" width="94" height="55" rx="8"/><text x="831" y="224" font-size="15">M</text><text class="sub" x="831" y="233"></text></g>
-<g><title>&amp;kp COMMA</title><rect class="key" x="882" y="190" width="94" height="55" rx="8"/><text x="929" y="224" font-size="15">,</text><text class="sub" x="929" y="233"></text></g>
-<g><title>&amp;kp DOT</title><rect class="key" x="980" y="190" width="94" height="55" rx="8"/><text x="1027" y="224" font-size="15">.</text><text class="sub" x="1027" y="233"></text></g>
-<g><title>&amp;kp FSLH</title><rect class="key" x="1078" y="190" width="94" height="55" rx="8"/><text x="1125" y="224" font-size="15">/</text><text class="sub" x="1125" y="233"></text></g>
-<g><title>&amp;kp C_VOLUME_UP</title><rect class="key" x="1176" y="190" width="94" height="55" rx="8"/><text x="1223" y="224" font-size="15">Vol +</text><text class="sub" x="1223" y="233"></text></g>
-<g><title>&amp;none</title><rect class="muted" x="322" y="252" width="94" height="55" rx="8"/><text x="369" y="286" font-size="15">—</text><text class="sub" x="369" y="295"></text></g>
-<g><title>&amp;kp TAB</title><rect class="key" x="420" y="252" width="94" height="55" rx="8"/><text x="467" y="286" font-size="15">TAB</text><text class="sub" x="467" y="295"></text></g>
-<g><title>&amp;lt 1 SPACE</title><rect class="key" x="518" y="252" width="94" height="55" rx="8"/><text x="565" y="278" font-size="15">SPACE</text><text class="sub" x="565" y="295">Hold: SYM</text></g>
-<g><title>&amp;lt 2 ENTER</title><rect class="key" x="686" y="252" width="94" height="55" rx="8"/><text x="733" y="278" font-size="15">ENTER</text><text class="sub" x="733" y="295">Hold: NAVI</text></g>
-<g><title>&amp;kp RIGHT_ALT</title><rect class="key" x="784" y="252" width="94" height="55" rx="8"/><text x="831" y="286" font-size="15">R Alt</text><text class="sub" x="831" y="295"></text></g>
-<g><title>&amp;none</title><rect class="muted" x="882" y="252" width="94" height="55" rx="8"/><text x="929" y="286" font-size="15">—</text><text class="sub" x="929" y="295"></text></g>
+<text class="sub" x="1130" y="37">▽  Transparent (fall through)     ·     —  Disabled</text>
+<g transform="translate(131.930 256.610) rotate(-10)"><title>&amp;kp Q</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">Q</text><text class="sub" y="15"></text></g>
+<g transform="translate(233.064 178.950) rotate(-4)"><title>&amp;kp W</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">W</text><text class="sub" y="15"></text></g>
+<g transform="translate(335.843 128.000) rotate(0)"><title>&amp;kp E</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">E</text><text class="sub" y="15"></text></g>
+<g transform="translate(425.802 170.351) rotate(0)"><title>&amp;kp R</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">R</text><text class="sub" y="15"></text></g>
+<g transform="translate(515.778 183.757) rotate(0)"><title>&amp;kp T</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">T</text><text class="sub" y="15"></text></g>
+<g transform="translate(803.979 183.757) rotate(0)"><title>&amp;kp Y</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">Y</text><text class="sub" y="15"></text></g>
+<g transform="translate(893.938 170.351) rotate(0)"><title>&amp;kp U</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">U</text><text class="sub" y="15"></text></g>
+<g transform="translate(983.896 128.000) rotate(0)"><title>&amp;kp I</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">I</text><text class="sub" y="15"></text></g>
+<g transform="translate(1086.680 178.972) rotate(4)"><title>&amp;kp O</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">O</text><text class="sub" y="15"></text></g>
+<g transform="translate(1187.810 256.624) rotate(10)"><title>&amp;kp P</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">P</text><text class="sub" y="15"></text></g>
+<g transform="translate(146.578 340.407) rotate(-10)"><title>&amp;kp A</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">A</text><text class="sub" y="15"></text></g>
+<g transform="translate(239.057 263.820) rotate(-4)"><title>&amp;hmrl LEFT_SHIFT S</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="-3" font-size="15">S</text><text class="sub" y="15">Hold: Shift</text></g>
+<g transform="translate(335.843 212.843) rotate(0)"><title>&amp;hmrl LCTRL D</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="-3" font-size="15">D</text><text class="sub" y="15">Hold: Ctrl</text></g>
+<g transform="translate(425.802 255.370) rotate(0)"><title>&amp;hmrl LEFT_GUI F</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="-3" font-size="15">F</text><text class="sub" y="15">Hold: L Gui</text></g>
+<g transform="translate(515.778 268.776) rotate(0)"><title>&amp;kp G</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">G</text><text class="sub" y="15"></text></g>
+<g transform="translate(803.979 268.776) rotate(0)"><title>&amp;kp H</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">H</text><text class="sub" y="15"></text></g>
+<g transform="translate(893.938 255.370) rotate(0)"><title>&amp;hmrr RIGHT_GUI J</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="-3" font-size="15">J</text><text class="sub" y="15">Hold: R Gui</text></g>
+<g transform="translate(983.896 212.843) rotate(0)"><title>&amp;hmrr RCTRL K</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="-3" font-size="15">K</text><text class="sub" y="15">Hold: Ctrl</text></g>
+<g transform="translate(1080.693 263.810) rotate(4)"><title>&amp;hmrr RIGHT_SHIFT L</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="-3" font-size="15">L</text><text class="sub" y="15">Hold: Shift</text></g>
+<g transform="translate(1173.164 340.416) rotate(10)"><title>&amp;kp SEMI</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">;</text><text class="sub" y="15"></text></g>
+<g transform="translate(66.000 402.109) rotate(-10)"><title>&amp;kp C_VOLUME_DOWN</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">Vol −</text><text class="sub" y="15"></text></g>
+<g transform="translate(161.400 424.017) rotate(-10)"><title>&amp;kp Z</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">Z</text><text class="sub" y="15"></text></g>
+<g transform="translate(244.879 348.492) rotate(-4)"><title>&amp;kp X</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">X</text><text class="sub" y="15"></text></g>
+<g transform="translate(335.843 297.862) rotate(0)"><title>&amp;kp C</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">C</text><text class="sub" y="15"></text></g>
+<g transform="translate(425.802 340.390) rotate(0)"><title>&amp;kp V</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">V</text><text class="sub" y="15"></text></g>
+<g transform="translate(515.778 353.637) rotate(0)"><title>&amp;kp B</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">B</text><text class="sub" y="15"></text></g>
+<g transform="translate(803.979 353.637) rotate(0)"><title>&amp;kp N</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">N</text><text class="sub" y="15"></text></g>
+<g transform="translate(893.938 340.390) rotate(0)"><title>&amp;kp M</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">M</text><text class="sub" y="15"></text></g>
+<g transform="translate(983.896 297.862) rotate(0)"><title>&amp;kp COMMA</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">,</text><text class="sub" y="15"></text></g>
+<g transform="translate(1074.860 348.477) rotate(4)"><title>&amp;kp DOT</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">.</text><text class="sub" y="15"></text></g>
+<g transform="translate(1158.349 424.030) rotate(10)"><title>&amp;kp FSLH</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">/</text><text class="sub" y="15"></text></g>
+<g transform="translate(1253.740 402.113) rotate(10)"><title>&amp;kp C_VOLUME_UP</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">Vol +</text><text class="sub" y="15"></text></g>
+<g transform="translate(400.719 443.489) rotate(0)"><title>&amp;none</title><rect class="muted" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">—</text><text class="sub" y="15"></text></g>
+<g transform="translate(500.403 457.234) rotate(15)"><title>&amp;kp TAB</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">TAB</text><text class="sub" y="15"></text></g>
+<g transform="translate(592.521 495.556) rotate(30)"><title>&amp;lt 1 SPACE</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="-3" font-size="15">SPACE</text><text class="sub" y="15">Hold: SYM</text></g>
+<g transform="translate(727.231 495.549) rotate(-30)"><title>&amp;lt 2 ENTER</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="-3" font-size="15">ENTER</text><text class="sub" y="15">Hold: NAVI</text></g>
+<g transform="translate(819.340 457.225) rotate(-15)"><title>&amp;kp RIGHT_ALT</title><rect class="key" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">R Alt</text><text class="sub" y="15"></text></g>
+<g transform="translate(919.038 443.489) rotate(0)"><title>&amp;none</title><rect class="muted" x="-43" y="-40.5" width="86" height="81" rx="8"/><text y="5" font-size="15">—</text><text class="sub" y="15"></text></g>
 </svg>

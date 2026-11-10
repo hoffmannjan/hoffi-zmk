@@ -11,6 +11,8 @@ SYMBOLS = dict(zip(
     "! @ # $ % ^ & * ' \" ~ ` [ ] ( ) | < > { } - _ = \\ \\ / / . , ; :".split(),
 ))
 LABELS = {
+    "PLUS": "+",
+
     "LEFT_SHIFT": "Shift", "RIGHT_SHIFT": "Shift",
     "LEFT_CTRL": "Ctrl", "LEFT_CONTROL": "Ctrl", "LCTRL": "Ctrl",
     "RIGHT_CONTROL": "Ctrl", "RCTRL": "Ctrl",
@@ -59,36 +61,40 @@ def key_label(binding, layers):
     return ACTIONS.get(behavior, (binding, ""))
 
 
-def draw_key(binding, x, y, layers):
+def draw_key(binding, x, y, angle, layers, width, height):
     primary, secondary = key_label(binding, layers)
     style = "muted" if binding in {"&trans", "&none"} else "key"
-    baseline = y + (26 if secondary else 34)
-    size = min(15, 142 // max(len(primary), 1))
+    baseline = -3 if secondary else 5
+    size = min(15, 130 // max(len(primary), 1))
     return (
-        f'<g><title>{escape(binding)}</title>'
-        f'<rect class="{style}" x="{x}" y="{y}" width="94" height="55" rx="8"/>'
-        f'<text x="{x + 47}" y="{baseline}" font-size="{size}">{escape(primary)}</text>'
-        f'<text class="sub" x="{x + 47}" y="{y + 43}">{escape(secondary)}</text></g>'
+        f'<g transform="translate({x:.3f} {y:.3f}) rotate({angle:g})">'
+        f'<title>{escape(binding)}</title>'
+        f'<rect class="{style}" x="{-width / 2:g}" y="{-height / 2:g}" '
+        f'width="{width}" height="{height}" rx="8"/>'
+        f'<text y="{baseline}" font-size="{size}">{escape(primary)}</text>'
+        f'<text class="sub" y="15">{escape(secondary)}</text></g>'
     )
 
 
-def render(title, name, bindings, layer_names, row_sizes):
-    if len(bindings) != 2 * sum(row_sizes):
+def render(title, name, bindings, layer_names, geometry, key_size):
+    if len(bindings) != len(geometry):
         raise ValueError(f"{title} {name} has the wrong number of keys")
+    xs, ys, _ = zip(*geometry)
+    scale = 5
+    width = round((max(xs) - min(xs)) * scale) + 132
+    height = round((max(ys) - min(ys)) * scale) + 194
     svg = [
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 335" '
-        f'width="1300" height="335" role="img" aria-label="{escape(title)} {escape(name)} keymap">',
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
+        f'width="{width}" height="{height}" role="img" aria-label="{escape(title)} {escape(name)} keymap">',
         '<style>text{font-family:system-ui,sans-serif;fill:#10263f;text-anchor:middle}'
         '.key{fill:#fff;stroke:#a6b8ce}.muted{fill:#e7edf5;stroke:#c1cede}'
         '.sub{font-size:11px;fill:#405d7e}.heading{text-anchor:start;font-weight:700}</style>',
         '<rect width="100%" height="100%" rx="16" fill="#f3f6fb"/>',
         f'<text class="heading" x="24" y="37" font-size="23">{escape(title)} · {escape(name)}</text>',
-        '<text class="sub" x="1050" y="37">▽  Transparent (fall through)     ·     —  Disabled</text>',
+        f'<text class="sub" x="{width - 190}" y="37">▽  Transparent (fall through)     ·     —  Disabled</text>',
     ]
-    offset = 0
-    for row, half in enumerate(row_sizes):
-        for column in range(2 * half):
-            x = 616 - (half - column) * 98 if column < half else 686 + (column - half) * 98
-            svg.append(draw_key(bindings[offset + column], x, 66 + row * 62, layer_names))
-        offset += 2 * half
+    for binding, (x, y, angle) in zip(bindings, geometry):
+        svg.append(draw_key(binding, 66 + (x - min(xs)) * scale,
+                            128 + (y - min(ys)) * scale, angle, layer_names,
+                            *key_size))
     return "\n".join([*svg, "</svg>", ""])
