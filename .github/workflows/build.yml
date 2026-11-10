@@ -1,5 +1,40 @@
-on: [push, pull_request, workflow_dispatch]
+name: Build firmware
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
 
 jobs:
+  check-keymap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: python3 scripts/generate_universal_34_keys.py --check
+
   build:
+    needs: check-keymap
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  release:
+    if: github.event_name == 'release'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v7
+        with:
+          name: firmware
+          path: firmware
+      - name: Attach UF2 files to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload -- "$RELEASE_TAG" firmware/*.uf2
