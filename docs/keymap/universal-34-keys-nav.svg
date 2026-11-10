@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1097 532" width="1097" height="532" role="img" aria-label="Ferris Sweep · universal-34-keys NAVI keymap">
+<style>text{font-family:system-ui,sans-serif;fill:#10263f;text-anchor:middle}.key{fill:#fff;stroke:#a6b8ce}.muted{fill:#e7edf5;stroke:#c1cede}.sub{font-size:11px;fill:#405d7e}.heading{text-anchor:start;font-weight:700}</style>
+<rect width="100%" height="100%" rx="16" fill="#f3f6fb"/>
+<text class="heading" x="24" y="37" font-size="23">Ferris Sweep · universal-34-keys · NAVI</text>
+<text class="sub" x="907" y="37">▽  Transparent (fall through)     ·     —  Disabled</text>
+<g transform="translate(66.000 223.000) rotate(0)"><title>&amp;kp NUMBER_1</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">1</text><text class="sub" y="15"></text></g>
+<g transform="translate(156.000 163.000) rotate(0)"><title>&amp;kp NUMBER_2</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">2</text><text class="sub" y="15"></text></g>
+<g transform="translate(246.000 128.000) rotate(0)"><title>&amp;kp NUMBER_3</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">3</text><text class="sub" y="15"></text></g>
+<g transform="translate(336.000 155.500) rotate(0)"><title>&amp;kp NUMBER_4</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">4</text><text class="sub" y="15"></text></g>
+<g transform="translate(426.000 168.000) rotate(0)"><title>&amp;kp N5</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">5</text><text class="sub" y="15"></text></g>
+<g transform="translate(671.000 168.000) rotate(0)"><title>&amp;kp NUMBER_6</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">6</text><text class="sub" y="15"></text></g>
+<g transform="translate(761.000 155.500) rotate(0)"><title>&amp;kp N7</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">7</text><text class="sub" y="15"></text></g>
+<g transform="translate(851.000 128.000) rotate(0)"><title>&amp;kp N8</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">8</text><text class="sub" y="15"></text></g>
+<g transform="translate(941.000 163.000) rotate(0)"><title>&amp;kp N9</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">9</text><text class="sub" y="15"></text></g>
+<g transform="translate(1031.000 223.000) rotate(0)"><title>&amp;kp N0</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">0</text><text class="sub" y="15"></text></g>
+<g transform="translate(66.000 308.000) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(156.000 247.870) rotate(0)"><title>&amp;kp LEFT_SHIFT</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">Shift</text><text class="sub" y="15"></text></g>
+<g transform="translate(246.000 213.580) rotate(0)"><title>&amp;kp LEFT_CONTROL</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">Ctrl</text><text class="sub" y="15"></text></g>
+<g transform="translate(336.000 240.250) rotate(0)"><title>&amp;kp LEFT_GUI</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">L Gui</text><text class="sub" y="15"></text></g>
+<g transform="translate(425.900 252.950) rotate(0)"><title>&amp;kp LEFT_ALT</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">L Alt</text><text class="sub" y="15"></text></g>
+<g transform="translate(671.100 252.950) rotate(0)"><title>&amp;kp LEFT</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">←</text><text class="sub" y="15"></text></g>
+<g transform="translate(761.000 240.250) rotate(0)"><title>&amp;kp DOWN</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">↓</text><text class="sub" y="15"></text></g>
+<g transform="translate(851.000 213.580) rotate(0)"><title>&amp;kp UP_ARROW</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">↑</text><text class="sub" y="15"></text></g>
+<g transform="translate(941.000 247.870) rotate(0)"><title>&amp;kp RIGHT</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">→</text><text class="sub" y="15"></text></g>
+<g transform="translate(1031.000 308.000) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(66.000 393.000) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(156.000 332.960) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(246.000 298.670) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(336.000 325.340) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(425.900 338.040) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(671.100 338.040) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(761.000 325.340) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(851.000 298.670) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(941.000 332.960) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(1031.000 393.000) rotate(0)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(385.850 426.500) rotate(15)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(478.650 466.500) rotate(30)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(618.350 466.500) rotate(-30)"><title>&amp;trans</title><rect class="muted" x="-41" y="-38" width="82" height="76" rx="8"/><text y="5" font-size="15">▽</text><text class="sub" y="15"></text></g>
+<g transform="translate(711.150 426.500) rotate(-15)"><title>&amp;bspc_del</title><rect class="key" x="-41" y="-38" width="82" height="76" rx="8"/><text y="-3" font-size="14">Backspace</text><text class="sub" y="15">Shift: Delete</text></g>
+</svg>
