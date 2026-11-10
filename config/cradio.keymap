@@ -83,6 +83,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <3000>;
+            flavor = "tap-preferred";
         };
 
         hold_reset_3s: hold_reset_3s {
@@ -92,6 +93,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <3000>;
+            flavor = "tap-preferred";
         };
 
         hold_bt_3s: hold_bt_3s {
@@ -101,6 +103,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <3000>;
+            flavor = "tap-preferred";
         };
 
         hold_bt_clear_3s: hold_bt_clear_3s {
@@ -110,15 +113,17 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <3000>;
+            flavor = "tap-preferred";
         };
 
         hold_bt_clear_all_10s: hold_bt_clear_all_10s {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_BT_CLEAR_ALL_10S";
-            bindings = <&none>, <&none>;
+            bindings = <&bt_clear_all>, <&none>;
 
             #binding-cells = <2>;
             tapping-term-ms = <10000>;
+            flavor = "tap-preferred";
         };
 
         hmrl: hmrl {
