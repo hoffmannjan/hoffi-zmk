@@ -6,6 +6,10 @@
 
 ![TOTEM BASE](keymap/totem-base.svg)
 
+### SYM
+
+![TOTEM SYM](keymap/totem-sym.svg)
+
 ### NAV
 
 ![TOTEM NAV](keymap/totem-nav.svg)
@@ -21,6 +25,10 @@
 ### BASE
 
 ![Ferris Sweep BASE](keymap/universal-34-keys-base.svg)
+
+### SYM
+
+![Ferris Sweep SYM](keymap/universal-34-keys-sym.svg)
 
 ### NAV
 
