@@ -50,6 +50,11 @@ positions. It rejects combos using removed keys so a replacement chord can
 be chosen deliberately. TOTEM's soft-off behavior requires its shield's
 wake configuration and is omitted from universal-34-keys.
 
-GitHub Actions checks the generated map and builds both halves of each
-keyboard plus the existing TOTEM settings-reset target. A published GitHub
+On a branch push, including a save from Keymap Editor, GitHub Actions
+regenerates the Sweep map and diagrams. If the files changed, it commits
+them to the same branch and explicitly starts a build from the updated
+branch. The generator can also be run locally before committing.
+
+CI checks the generated files and builds both halves of each keyboard
+plus the existing TOTEM settings-reset target. A published GitHub
 release builds its tagged commit and attaches the UF2 files from that run.

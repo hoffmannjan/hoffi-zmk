@@ -241,7 +241,7 @@
 
             bindings = <
                 &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp SQT  &kp DOUBLE_QUOTES
-                &trans  &hmrl LEFT_SHIFT TILDE  &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL MINUS  &hmrr RIGHT_SHIFT PLUS  &kp COLON
+                &trans  &hmrl LEFT_SHIFT GRAVE  &hmrl LEFT_CONTROL TILDE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL MINUS  &hmrr RIGHT_SHIFT PLUS  &kp COLON
                 &trans  &trans  &kp PIPE  &kp LESS_THAN  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp UNDERSCORE  &kp EQUAL  &kp BSLH
                 &mo 3  &trans  &trans  &bspc_del
             >;
