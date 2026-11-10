@@ -285,9 +285,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                          &kp EXCL  &kp AT                  &kp HASH                  &kp DOLLAR                   &kp PERCENT             &kp CARET              &kp AMPERSAND                  &kp ASTERISK               &kp SQT                  &kp DOUBLE_QUOTES
-                          &trans    &hmrl LEFT_SHIFT TILDE  &hmrl LEFT_CONTROL GRAVE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL MINUS  &hmrr RIGHT_SHIFT PLUS  &kp COLON
-&kp LC(C_BRIGHTNESS_DEC)  &trans    &trans                  &kp PIPE                  &kp LESS_THAN                &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp GREATER_THAN               &kp UNDERSCORE             &kp EQUAL                &kp BSLH           &kp LC(C_BRIGHTNESS_INC)
+                          &kp EXCL  &kp AT                  &kp HASH                  &kp DOLLAR                   &kp PERCENT             &kp CARET              &kp AMPERSAND                  &kp ASTERISK               &kp SQT                 &kp DOUBLE_QUOTES
+                          &trans    &hmrl LEFT_SHIFT GRAVE  &hmrl LEFT_CONTROL TILDE  &hmrl LEFT_GUI LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &hmrr RIGHT_GUI RIGHT_BRACKET  &hmrr RIGHT_CONTROL MINUS  &hmrr RIGHT_SHIFT PLUS  &kp COLON
+&kp LC(C_BRIGHTNESS_DEC)  &trans    &trans                  &kp PIPE                  &kp LESS_THAN                &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp GREATER_THAN               &kp UNDERSCORE             &kp EQUAL               &kp BSLH           &kp LC(C_BRIGHTNESS_INC)
                                                             &trans                    &mo 3                        &trans                  &trans                 &bspc_del                      &trans
             >;
         };
@@ -309,10 +309,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                       &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4  &kp N5          &kp NUMBER_6   &kp N7     &kp N8        &kp N9       &kp N0
-                       &trans        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT    &kp LEFT       &kp DOWN   &kp UP_ARROW  &kp RIGHT    &trans
-&hold_soft_off_3s 0 0  &trans        &trans          &trans            &trans        &trans          &trans         &trans     &trans        &trans  &trans  &hold_logout_1s 0 0
-                                                     &trans            &trans        &trans          &trans         &bspc_del  &trans
+                       &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp N7     &kp N8        &kp N9     &kp N0
+                       &trans        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT    &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans
+&hold_soft_off_3s 0 0  &trans        &trans          &trans            &trans        &trans          &trans        &trans     &trans        &trans     &trans  &hold_logout_1s 0 0
+                                                     &trans            &trans        &trans          &trans        &bspc_del  &trans
             >;
         };
 
