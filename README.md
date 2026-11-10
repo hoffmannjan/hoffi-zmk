@@ -53,7 +53,7 @@ wake configuration and is omitted from universal-34-keys.
 
 Every branch push, including saves from Keymap Editor and merges to
 `master`, regenerates the Sweep map and layout SVGs and builds both
-halves of both keyboards plus the TOTEM settings-reset target. If the
+halves of both keyboards plus settings-reset targets for XIAO BLE and nice!nano. If the
 generated files changed, CI commits them to the same branch and starts
 the firmware build from the updated branch.
 
