@@ -22,7 +22,7 @@ whose product page does not specify the revision of its custom PCB.
 | ADJ | [TOTEM ADJ](docs/keymap/totem-adj.svg) | [Sweep ADJ](docs/keymap/universal-34-keys-adj.svg) |
 
 ## TOTEM and universal-34-keys firmware
-    bs
+
 Edit `config/totem.keymap`, then regenerate the universal-34-keys map and both sets of diagrams:
 
 ```sh
