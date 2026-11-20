@@ -50,7 +50,7 @@
 
         combo_cycle_win {
             bindings = <&cmd_grave>;
-            key-positions = <13 16>;
+            key-positions = <13 16 5>;
             timeout-ms = <50>;
         };
 
