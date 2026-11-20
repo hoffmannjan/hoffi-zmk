@@ -36,21 +36,16 @@
 
         combo_esc_l {
             timeout-ms = <60>;
-            key-positions = <11 12 13>;
+            key-positions = <12 13>;
             bindings = <&kp ESC>;
             layers = <0>;
         };
 
         combo_r_esc {
             bindings = <&kp ESC>;
-            key-positions = <16 17 18>;
+            key-positions = <17 16>;
             timeout-ms = <60>;
             layers = <0>;
-        };
-
-        combo_bkspc {
-            bindings = <&bspc_del>;
-            key-positions = <9 8>;
         };
 
         combo_cycle_win {
